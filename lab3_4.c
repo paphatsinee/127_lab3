@@ -29,6 +29,9 @@ int main()
             }
             else printf("%d",n);
     }
+    else if(n==1)
+        printf("%d",2);
+
     else printf("%d",n);
 
 
