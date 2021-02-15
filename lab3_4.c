@@ -1,44 +1,51 @@
 #include<stdio.h>
 int main()
 {
-    int n,a,b;
+    int n,a,b,c,a1,b1;
     scanf("%d",&n);
     if(n%2==0 || n%3==0)
     {
+        c=n;
         if(n%2==0)
         {
-            while(n%2==0)
+
+            while(c%2==0)
             {
-                a=n-1;
-                n=n-1;
+                a=c-1;
+                c=c-1;
             }
-            while(n%2==0)
+            while(c%2==0)
             {
-                b=n+1;
-                n=n+1;
+                b=c+1;
+                c=c+1;
             }
-            if(a>b)
+            a1=n-a;
+            b1=b-n;
+            if(a1>b1)
                 a=b;
 
         }
         else if(n%3==0)
         {
-            while(n%3==0)
+            while(c%3==0)
             {
-                a=n-1;
-                n=n-1;
+                a=c-1;
+                c=c-1;
             }
-            while(n%3==0)
+            while(c%3==0)
             {
-                b=n+1;
-                n=n+1;
+                b=c+1;
+                c=c+1;
             }
+            a1=n-a;
+            b1=b-n;
             if(a>b)
                 a=b;
         }
         printf("%d",a);
     }
     else printf("%d",n);
+
 
 
 
