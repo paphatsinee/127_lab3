@@ -3,8 +3,11 @@ int main()
 {
     int n,a,b,c,a1=0,b1=0;
     scanf("%d",&n);
-    if((n%2==0 || n%3==0)&&(n!=2||n!=3))
+
+    if(n%2==0||n%3==0||n%5==0||n%7==0)
     {
+            if(n!=2&&n!=3&&n!=5&&n!=7)
+            {
             c=n;
             while(c%2==0||c%3==0||c%5==0||c%7==0)
             {
@@ -23,8 +26,12 @@ int main()
                 a=b;
 
         printf("%d",a);
+            }
+            else printf("%d",n);
     }
     else printf("%d",n);
+
+
 
 
 
