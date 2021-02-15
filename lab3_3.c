@@ -8,11 +8,18 @@ int main()
         while(k!=1)
         {
             if(k%i==0)
-                printf("%d\n",i);
-                k/=i;
-                i++;
+            {
+                while(k%i==0)
+                {
+                    printf("%d\n",i);
+                    k/=i;
+                }
+            }
+
+        i++;
         }
     }
+    printf("%d",0);
 
 
     return 0;
