@@ -1,17 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int a=0,i,j,max=0,win=0;
+    int a,b,i,j,max=0,win=0;
     for(i=1;i<=5;i++)
     {
+        a=0;
         for(j=0;j<4;j++)
         {
-            scanf("%d",&a[i][j]);
-
+            scanf("%d",&b);
+            a+=b;
         }
-        if(a[i][j]>max)
+        if(a>max)
         {
-            max=a[j];
+            max=a;
             win=i;
         }
 
