@@ -24,7 +24,7 @@ int main()
             printf("%d is a Lucky Number.",num);
         }
         else if(sum>=1&&c<=3)
-            printf("%d is not a Lucky Number.");
+            printf("%d is not a Lucky Number.",num);
     }
     return 0;
 }
