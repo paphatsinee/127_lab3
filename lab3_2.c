@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,max=0,ans;
     scanf("%d",&n);
     if(n>=1 && n<=10000)
     {
@@ -14,11 +14,19 @@ int main()
         {
             if(a[i]>=1 && a[i]<=48 && b[i]>=1 && b[i]<=50000)
             {
-                for(i=0;i<=n;i++)
+                for(i=0;i<n;i++)
                 {
-
+                    if(a[i]==a[i+1])
+                        b[i]+=b[i+1];
+                    if(a[i]>max)
+                    {
+                        max=a[i];
+                        ans=i+1;
+                    }
                 }
             }
         }
+        printf("%d %d",ans,max);
     }
+    return 0;
 }
