@@ -17,7 +17,7 @@ int main()
                 b=c+1;
                 c=c+1;
             }
-            a1=n-a;
+            a1= n-a;
             b1=b-n;
             if(a1>b1)
                 a=b;
