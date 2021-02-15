@@ -12,15 +12,15 @@ int main()
         }
         for(i=0;i<n;i++)
         {
-            if(a[i]>=1 && a[i]<=48 && b[i]>=1 && b[i]<=50000)
+            if(a[i]>=1&&a[i]<=48&&b[i]>=1&&b[i]<=50000)
             {
                 for(i=0;i<n;i++)
                 {
                     if(a[i]==a[i+1])
                         b[i]+=b[i+1];
-                    if(a[i]>max)
+                    if(b[i]>max)
                     {
-                        max=a[i];
+                        max=b[i];
                         ans=i+1;
                     }
                 }
