@@ -1,15 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int k,sum=1,i;
+    int k,sum=0,i=2;
     scanf("%d",&k);
     if(1 <= k <= 1000)
     {
-        for(i=1;i<=k;i++)
-            sum *= i;
 
-        printf("%d",sum);
+
     }
+    printf("%d\n",sum);
 
     return 0;
 }
