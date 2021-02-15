@@ -7,15 +7,12 @@ int main()
     {
         while(k!=1)
         {
-            if(k%i==0)
-            {
-                while(k%i==0)
-                {
-                    printf("%d\n",i);
-                    k/=i;
-                }
-            }
 
+            while(k%i==0)
+            {
+                printf("%d\n",i);
+                k/=i;
+            }
         i++;
         }
     }
